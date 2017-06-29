@@ -1,0 +1,14 @@
+i
+  font-style: normal
+  speak: none
+  font-weight: normal
+  font-size: 2rem
+  font-family: "iconfont"
+
+  &.graphic-14s:before
+    content: "\EA01"
+
+// Icon Sizes in REM
+@for $i from 1 through 10
+  i.-size-#{$i}
+    font-size: $i * 1rem !important
