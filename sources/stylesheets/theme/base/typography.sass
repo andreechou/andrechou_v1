@@ -1,7 +1,11 @@
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
   font-family: $font-serif
   margin-top: 1rem
   margin-bottom: 1rem
+  > a
+    text-decoration: none
+    &:hover
+      text-decoration: underline
 
 h1, .h1
   font-size: $h1
@@ -20,9 +24,9 @@ p
   font-family: $font-sans-serif
   font-size: $p-md
   margin-bottom: 1rem
-  > .-large
+  &.-large
     font-size: $p-lg
-  > .-small
+  &.-small
     font-size: $p-sm
 
 a

@@ -3,54 +3,21 @@
 	{
 		"selected_items":
 		[
+			[
+				"font",
+				"font-size"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 1140,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "sources/pages/index.pug",
 			"settings":
 			{
-				"buffer_size": 914,
+				"buffer_size": 1692,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sources/stylesheets/test.sass",
-			"settings":
-			{
-				"buffer_size": 72,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "p"
-			}
-		},
-		{
-			"file": "sources/stylesheets/theme/components/typography.sass",
-			"settings":
-			{
-				"buffer_size": 15,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "sources/stylesheets/main.scss",
-			"settings":
-			{
-				"buffer_size": 64,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "h1 {"
 			}
 		}
 	],
@@ -62,16 +29,16 @@
 	"command_palette":
 	{
 		"height": 357.0,
-		"last_filter": "sass",
+		"last_filter": "scss",
 		"selected_items":
 		[
 			[
-				"sass",
-				"Set Syntax: Sass"
-			],
-			[
 				"scss",
 				"Set Syntax: CSS"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
 			],
 			[
 				"install ",
@@ -114,27 +81,56 @@
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist/assets",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist/assets/css",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist/assets/fonts",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/icons",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/parts",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme",
-		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components"
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/base",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/layouts",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/mixins",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/utilities"
 	],
 	"file_history":
 	[
-		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/typography.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/base/base.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/card.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/base/grid.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/gulpfile.js",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/i-icons.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist/assets/css/main.css",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/base/fonts.scss",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/menu-list.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/menu-inline.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/button.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/.gitignore",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/base/reset.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/parts/head.pug",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/referencias.pug",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/orcamento.pug",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/base/typography.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/index.pug",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/main.scss",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/utilities/shadow.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/layouts/parts.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/utilities/spacing.sass",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/nav.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/variables.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/logo-14shape.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/mixins/responsive.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/test.sass",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/theme.scss",
+		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/theme/components/typography.sass",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/stylesheets/app.scss",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist/index.html",
-		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/parts/head.pug",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist/assets/css/app.css",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/package.json",
-		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/index.pug",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sources/pages/lol.pug",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/dist/css/app.css",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/scss/app.scss",
-		"/Users/andreechou/Documents/Projetos/andrechou_v1/gulpfile.js",
 		"/Users/andreechou/Documents/Projetos/andrechou_v1/sass/app.scss",
 		"/Users/andreechou/Google Drive/Projetos/INCT/site/inct_v1/sources/pages/parts/footer.pug",
 		"/Users/andreechou/Google Drive/Projetos/INCT/site/inct_v1/publications.html",
@@ -161,6 +157,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"4",
+			"container",
+			"//",
+			"s.",
+			".",
+			"webfont",
+			";",
+			"black",
+			".-h-6",
+			"6",
+			".15",
+			".p",
+			".m",
+			"desktop",
+			"size-",
+			"size",
+			"1",
+			"family",
 			"util",
 			"sass",
 			"ard-softwar",
@@ -183,149 +197,37 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "gulpfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1140,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								679,
-								679
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 230.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "sources/pages/index.pug",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 914,
+						"buffer_size": 1692,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								110,
-								110
+								516,
+								516
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage"
+							"syntax": "Packages/Pug/Syntaxes/Pug.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "sources/stylesheets/test.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 72,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								50,
-								50
-							]
-						],
-						"settings":
-						{
-							"auto_name": "p",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 357.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "sources/stylesheets/theme/components/typography.sass",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 15,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "sources/stylesheets/main.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 64,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"auto_name": "h1 {",
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				}
 			]

@@ -679,10 +679,14 @@ th {
   padding: 0;
   text-align: left; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "harfang-pro", "Georgia", serif;
   margin-top: 1rem;
   margin-bottom: 1rem; }
+  h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a, .h1 > a, .h2 > a, .h3 > a, .h4 > a, .h5 > a, .h6 > a {
+    text-decoration: none; }
+    h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover, .h1 > a:hover, .h2 > a:hover, .h3 > a:hover, .h4 > a:hover, .h5 > a:hover, .h6 > a:hover {
+      text-decoration: underline; }
 
 h1, .h1 {
   font-size: 3rem; }
@@ -706,42 +710,13 @@ p {
   font-family: "skolar-sans-latin", BlinkMacSystemFont, -apple-system, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   margin-bottom: 1rem; }
-  p > .-large {
+  p.-large {
     font-size: 1.125rem; }
-  p > .-small {
+  p.-small {
     font-size: 0.875rem; }
 
 a {
   color: #000; }
-
-button {
-  font-family: "harfang-pro", "Georgia", serif;
-  font-size: 1.3125rem;
-  background-color: #000;
-  border-color: #000;
-  color: #FFF;
-  cursor: pointer;
-  justify-content: center;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  text-align: center;
-  white-space: nowrap; }
-
-.card {
-  position: relative;
-  padding: 2rem;
-  min-height: 10rem;
-  cursor: pointer; }
-  .card .img-centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .card img {
-    max-width: 80%;
-    max-height: 70%; }
 
 i {
   font-style: normal;
@@ -751,6 +726,9 @@ i {
   font-family: "iconfont"; }
   i.graphic-14s:before {
     content: "\EA01"; }
+
+.icon-typography {
+  text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15), 4px 8px 8px rgba(0, 0, 0, 0.15), 8px 16px 16px rgba(0, 0, 0, 0.15), 16px 32px 32px rgba(0, 0, 0, 0.25), 32px 64px 64px rgba(0, 0, 0, 0.25); }
 
 i.-size-1 {
   font-size: 1rem !important; }
@@ -781,6 +759,69 @@ i.-size-9 {
 
 i.-size-10 {
   font-size: 10rem !important; }
+
+.image-me {
+  width: 12rem; }
+
+.nav-header {
+  margin-top: 4rem; }
+
+.section {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.section-height {
+  height: 100vh; }
+
+.section-flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
+
+.-flex-align-end {
+  align-self: flex-end; }
+
+.-flex-child {
+  flex: 1; }
+
+button {
+  font-family: "harfang-pro", "Georgia", serif;
+  font-size: 1.3125rem;
+  background-color: #000;
+  border-color: #000;
+  color: #FFF;
+  cursor: pointer;
+  justify-content: center;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  text-align: center;
+  white-space: nowrap; }
+
+.card {
+  position: relative;
+  padding: 2rem;
+  cursor: pointer;
+  transition: box-shadow 1s ease;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px transparent, 0 64px 64px transparent; }
+  .card:hover {
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.15), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 0 32px 32px rgba(0, 0, 0, 0.15), 0 64px 64px rgba(0, 0, 0, 0.15); }
+
+.card-projetos {
+  min-height: 10rem; }
+  .card-projetos .img-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .card-projetos img {
+    max-width: 80%;
+    max-height: 70%; }
 
 .menu-inline {
   font-family: "harfang-pro", "Georgia", serif;
@@ -818,9 +859,6 @@ i.-size-10 {
     text-decoration: none; }
   .menu-list > li a:hover {
     text-decoration: underline; }
-
-body {
-  margin-top: 4rem; }
 
 .-shadow {
   transition: box-shadow 1s;

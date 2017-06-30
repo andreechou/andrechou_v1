@@ -6,8 +6,9 @@ html
   head
     include parts/head
   body
-    nav.-mb-3
-      .container
+
+    section.section-height.section-flex
+      nav.nav-header.container.-flex-child
         ul.menu-inline.section
           li 
             a(href="#") sobre mim
@@ -17,33 +18,43 @@ html
             a(href="#") artigos
           li
             a(href="#") contato
-    header
+      .container.-flex-child.-flex-align-end.-pb-4
+        .columns
+          .column.is-half
+            img.image-me(src="assets/img/me.png", alt="")
+            h1.-mb-0 André Chou
+            h4.-mt-0.-mb-0 Arquiteto, designer e desenvolvedor.
+            p.-large Crio experiências ao usuário através da construção de marca, estratégia digital, prototipação e produtos digitais como sites e aplicativos.
+
+    section.section#sobremim
       .container
-        i.graphic-14s
-        h1.-mb-0 André Chou
-        h4.-mt-0 Arquiteto, designer e desenvolvedor.
-    .container.-mt-4
-        
+        .icon-typography.h2 ∆
+        h3 sobre mim
+        p.-large Formado em Arquitetura e Urbanismo pela Faculdade de Arquitetura e Urbanismo da Universidade de São Paulo.
+        p.-large Trabalho com design gráfico desde 2010. Aprendi a programar em 2014 e desde então venho desenvolvendo produtos digitais para empresas e agências.
+        p.-large Atendi clientes como Spotify, Nivea, Skol e Prefeitura de São Paulo.
+        h4
+          a(href="#") ver mais &#62;
+      
 
+    section.section#projetos
+      .container
+        .icon-typography.h2 [ ]
+        h3 projetos
+        .columns.-mt-4.-mb-0
+          .column
+            .card.card-projetos
+              a(href="http://www.habitasampa.inf.br/" target="_blank")
+                img.img-centered(src="assets/img/logo-habitasampa.png", alt="")
+          .column
+            .card.card-projetos
+              a(href="http://blocosderua.com/" target="_blank")
+                img.img-centered(src="assets/img/logo-blocos.png", alt="")
+          .column
+            .card.card-projetos
+              a(href="http://www.marcascomsal.com/" target="_blank")
+                img.img-centered(src="assets/img/logo-sal.jpg", alt="")
 
-        main
-          h2.-mt-0 Olá, eu sou o André
-          p.p-lg Sou Arquiteto, Designer e Desenvolvedor. Crio experiências ao usuário através da construção de marca, estratégia digital, prototipação e produtos digitais como sites e aplicativos.
-          p.p-lg Trabalho com design gráfico desde 2010. Aprendi a programar em 2014 e desde então venho desenvolvendo produtos digitais para empresas e agências.
-          p.p-lg Atendi clientes como Spotify, Nivea, Skol e Prefeitura de São Paulo.
-          h4.-mt-4 Alguns dos meus trabalhos
-          .columns.-mt-4.-mb-0
-            .column
-              .card.-shadow
-                a(href="http://www.habitasampa.inf.br/" target="_blank")
-                  img.img-centered(src="assets/img/logo-habitasampa.png", alt="")
-            .column
-              .card.-shadow
-                a(href="http://blocosderua.com/" target="_blank")
-                  img.img-centered(src="assets/img/logo-blocos.png", alt="")
-            .column
-              .card.-shadow
-                a(href="http://www.marcascomsal.com/" target="_blank")
-                  img.img-centered(src="assets/img/logo-sal.jpg", alt="")
-
+    footer
+      i.graphic-14s
 
