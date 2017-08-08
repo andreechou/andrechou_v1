@@ -1,0 +1,107 @@
+-var site_name = "André Chou"
+-var site_title = "Sobre mim"
+
+doctype html
+html
+  head
+    include parts/head
+  body
+
+    section
+      nav.nav-header.container
+        ul.menu-inline.section
+          li.-selected 
+            a(href="#") sobre mim
+          li 
+            a(href="#") projetos
+          li
+            a(href="#") artigos
+          li
+            a(href="#") contato
+
+    section.section#sobremim
+      .container
+        img.image-me(src="assets/img/me.png", alt="")
+        .columns
+          .column.is-9-desktop.is-9-tablet
+            h1.h2 sobre mim
+            p.-large Formado em Arquitetura e Urbanismo pela Faculdade de Arquitetura e Urbanismo da Universidade de São Paulo (FAUUSP).
+            p.-large Trabalho com design gráfico desde 2010. Aprendi a programar em 2014 e desde então venho desenvolvendo produtos digitais para empresas e agências.
+            p.-large Atendi clientes como Spotify, Nivea, Skol e Prefeitura de São Paulo.
+            h3.-mt-6 Habilidades
+            .columns
+              .column
+                h4 UX Designer
+                p Estruturar Arquitetura de Informação / Criar Interfaces e Protótipos Rápidos / Desenvolver pesquisa focada no usuário
+              .column
+                h4 Designer Gráfico
+                p Criar Marcas / Desenvolver materiais gráficos impressos e digitais
+              .column
+                h4 Web Developer
+                p Desenvolver Sites e Aplicativos / Front-end e Back-end
+          .column.is-3-desktop.is-3-tablet
+            h4 Formação
+            p
+              strong Arquiteto e Urbanista
+              | , graduado na Faculdade de Arquitetura e Urbanismo da Universidade de São Paulo
+            h4 Idiomas
+            p
+              strong Português
+              |  | Nativo
+              br
+              strong Inglês
+              |  | Avançado
+              br
+              strong Espanhol
+              |  | Básico
+        hr
+        .columns
+          .column
+            h3.-mb-4 Experiências Profissionais
+            
+            .card.-mb-4
+              h3.-title Prefeitura de São Paulo
+              h5.-subtitle.-light.-mb-4 [jun/2016 - jan/2017]
+              .columns
+                .column.is-7.content
+                  p Inicialmente meu papel na Prefeitura foi fazer o novo site do HabitaSampa (antigo Habisp), um projeto do setor de habitação social que serviria como meio de comunicação para os cidadãos. Tive um prazo apertado de um mês para entender a plataforma, construir uma arquitetura de informação, fazer o layout e programar. Nesse tempo fiz uma pesquisa rápida de usuários com os funcionários internos para conhecer mais da realidade do projeto; organizei todas as informações que o site antigo tinha; construi uma nova estrutura para o site com um novo design, inclusive do logo, e finalizei a programação em Wordpress, facilitando a vida do gestor em adicionar e editar novos conteúdos.
+                  figure
+                    img(src="assets/img/projects/habitasampa_site.png", alt="")
+                    span clique na imagem para ver o projeto
+                  p A experiência de trabalhar numa máquina pública abre a mente para uma realidade precária de sistemas antigos com tecnologias defasadas e até abandonadas. Soma-se a alta rotatividade de profissionais de desenvolvimento que aumenta a complexidade de conectar os serviços internos. Com uma visão de designer, meu entendimento foi trazer a ligação entre programas com linguagens diferentes para uma única plataforma desenvolvida em Vue.js, um framework de Javascript que conversa via REST com qualquer tipo de sistema. Essa tecnologia nos permitiu integrar com sistemas em Python e em .NET, deixando o trabalho de back-end apenas aos desenvolvedores e eu, designer e front-end developer, com a parte do desenho do sistema para o usuário.
+                  include parts/sph-form
+                  p Minha última frente dentro da Prefeitura (que encerrou devido a troca de gestão) foi a estruturação de um guia de estilos front-end (exemplo) para serem usados pelos desenvolvedores. Isso facilitaria a vida deles e ao mesmo tempo manteria um padrão de design para as plataformas do sistema público. Como sistemas de formulários e gráficos tendem a ser complexo, eu parti de um template pago de front-end e customizei para adequar a identidade visual do HabitaSampa. Meu objetivo era construir um guia de uso, como o exemplo citado, para que os próprios desenvolvedores pudessem também criar suas telas de front-end sem a ajuda de um designer.
+
+                  
+                .column.is-4.is-offset-1
+                  h4.-mt-0 Atuação
+                  ul.list
+                    li Desenvolvimento de uma plataforma colaborativa e aberta para discussão de projetos de leis para a cidade.
+                    li Desenvolvimento de um framework de front-end em Vue.js (JavaScript) para gestão de dados da prefeitura.
+                    li Implantação de metodologia de projetos para equipe técnica do HabitaSampa para desenvolvimento de novas plataformas.
+                  h4.-title.-mt-4 Projetos desenvolvidos
+                  .card.card-projeto.-shadow-light
+                    img.card-image(src="assets/img/projects/habitasampa_thumb.svg", alt="")
+                    h6 [ projeto ]
+                    h4 HabitaSampa
+                  .card.card-projeto.-shadow-light
+                    img.card-image(src="assets/img/projects/sph_thumb.svg", alt="")
+                    h6 [ projeto ]
+                    h4 SPH
+
+            .card
+              .columns
+                .column.is-7
+                  h4.-title RCKT
+                  h5.-subtitle.-light.-mb-1 [jul/2014 - mai/2016]
+                  p In RCKT, I participated in the entire development process of websites and mobile apps. From design to programming, creating layouts and style guides and using frameworks like Wordpress and Ionic. Furthermore, I worked on visual identity and stationary for different companies.
+                .column.is-4.is-offset-1
+                  h4 Atuação
+                  ul.list
+                    li Front-end development using HTML, CSS, JS, JQuery, Sass and Bootstrap
+                    li Back-end development using PHP, AngularJS, Wordpress and Node.js
+                    li Mobile development using Ionic
+                    li Graphic design using Sketch, Illustrator, Photoshop and InDesign
+
+
+      

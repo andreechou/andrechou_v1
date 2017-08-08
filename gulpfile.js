@@ -19,7 +19,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./dist"
     });
 
-    gulp.watch(["sources/stylesheets/**/*.scss", "sources/stylesheets/**/*.sass"], ['sass']);
+    gulp.watch(["sources/stylesheets/**/*.css", "sources/stylesheets/**/*.scss", "sources/stylesheets/**/*.sass"], ['sass']);
     gulp.watch('sources/pages/**/*.pug', ['pug']);
     gulp.watch("dist/*.html").on('change', browserSync.reload);
 });

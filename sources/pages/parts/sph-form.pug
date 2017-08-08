@@ -1,0 +1,36 @@
+script(src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js", type='text/javascript')
+#app
+  .window
+    .window-header Gerador de Formulários
+    .window-body.-shadow-light
+      .field(v-for="form in parseForms")
+        label(:name="form.name") {{form.type}}
+        input(:type="form.type", :name="form.name", :placeholder="form.placeholder", :value="form.value")
+  .editor-code
+    .editor-header Teste o editor
+    textarea(v-model="forms").-shadow-light
+
+
+script.
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello!',
+      forms: '[{"name": "test", "type": "text", "placeholder": "oi", "value": "tchau"}, {"name": "test2", "type": "text", "placeholder": "lalala", "value": "nanana"}]',
+      formsValid: '[{"name": "test", "type": "text", "placeholder": "oi", "value": "tchau"}]'
+    },
+    mounted: function() {
+      this.forms = JSON.stringify(JSON.parse(this.forms), undefined, 4);
+    },
+    computed: {
+      parseForms: function() {
+        try {
+          JSON.parse(this.forms);
+          } catch (e) {
+            return JSON.parse(this.formsValid);
+          }
+          return JSON.parse(this.forms);
+
+      }
+    } 
+  })

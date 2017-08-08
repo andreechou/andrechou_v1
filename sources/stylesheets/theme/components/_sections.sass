@@ -1,9 +1,16 @@
+section
+  outline: 0
+
 .section
   padding-top: 4rem
   padding-bottom: 4rem
 
 .section-height
   height: 100vh
+
+.section-padding
+  padding-top: 12rem
+  padding-bottom: 12rem
 
 .section-flex
   display: -webkit-flex
@@ -18,3 +25,14 @@
   align-self: flex-end
 .-flex-child
   flex: 1
+
+.section-centered
+  position: relative
+  height: 100vh
+  width: 100%
+  .-centered-child
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
