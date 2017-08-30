@@ -1,134 +1,21 @@
--var site_name = "André Chou"
--var site_title = "Arquiteto, designer e desenvolvedor"
+-var site_name = "UX Designer"
+-var site_title = "André Chou"
+-var page = "index"
 
 doctype html
 html
   head
     include parts/head
   body
+    include parts/header
 
-    section.section-height.section-flex
-      nav.nav-header.container.-flex-child
-        ul.menu-inline.section
-          li
-            a(href="#sobremim") sobre mim
-          li
-            a(href="#projetos") projetos
-          li
-            a(href="#contato") contato
-      .container.-flex-child.-flex-align-end.-pb-4
-        .columns
-          .column.is-half
-            img.image-me(src="assets/img/me.png", alt="")
-            h1.-mb-0 André Chou
-            h4.-mt-0.-mb-0 Arquiteto, designer e desenvolvedor.
-            p.-large Crio experiências ao usuário através da construção de marca, estratégia digital, prototipação e produtos digitais como sites e aplicativos.
-            p.-large
-              a(href="https://drive.google.com/file/d/0B1UfI3Gc5d6AVGVWVHo5Rmh3MGM/view?usp=sharing" target="_blank") curriculum
-              |  | 
-              a(href="https://www.linkedin.com/in/andreechou/" target="_blank") linkedin
-
-    section.section#sobremim
+    section
       .container
-        h3 sobre mim
-        p Formado em Arquitetura e Urbanismo pela Faculdade de Arquitetura e Urbanismo da Universidade de São Paulo.
-        p Trabalho com design gráfico desde 2010. Aprendi a programar em 2014 e desde então venho desenvolvendo produtos digitais para empresas e agências.
-        p Atendi clientes como Spotify, Nivea, Skol e Prefeitura de São Paulo.
-        p Mais sobre mim entre no meu 
-          a(href="https://www.linkedin.com/in/andreechou/" target="_blank") LinkedIn
-          |  ou veja meu 
-          a(href="https://drive.google.com/file/d/0B1UfI3Gc5d6AVGVWVHo5Rmh3MGM/view?usp=sharing" target="_blank") currículo
-        h3.-mt-8 habilidades
-        h4 UX Designer
-        p Estruturar Arquitetura de Informação / Criar Layout de Interfaces e Protótipos Rápidos / Desenvolver pesquisa focada no usuário / Pesquisa de Mercado
-        h4 Designer Gráfico
-        p Criar Marcas / Desenvolver materiais gráficos impressos e digitais
-        h4 Desenvolvedor
-        p Desenvolver Sites e Aplicativos / Front-end e Back-end
-
-    section.section#projetos
-      .container
-        h3 projetos
-        .columns.-mt-4.-mb-0
-          .column
-            .card.card-projetos
-              a(href="http://www.habitasampa.inf.br/" target="_blank")
-                img.img-centered(src="assets/img/logo-habitasampa.png", alt="")
-          .column
-            .card.card-projetos
-              a(href="http://blocosderua.com/" target="_blank")
-                img.img-centered(src="assets/img/logo-blocos.png", alt="")
-          .column
-            .card.card-projetos
-              a(href="http://www.marcascomsal.com/" target="_blank")
-                img.img-centered(src="assets/img/logo-sal.jpg", alt="")
-        .columns.-mt-2
-          .column
-            .card.card-projetos
-              a(href="http://www.arquigrafia.org.br/" target="_blank")
-                img.img-centered(src="assets/img/projects/arquigrafia_thumb.png", alt="")
-          .column
-            .card.card-projetos
-              a(href="http://wp.interscity.org/" target="_blank")
-                img.img-centered(src="assets/img/projects/inct_thumb.png", alt="")
-          .column
-            .card.card-projetos
-              a(href="http://appvista.me/" target="_blank")
-                img.img-centered(src="assets/img/projects/vistame_thumb.png", alt="")
-
-    section.section.section-padding#contato
-      .container
-        h3 vamos tomar um café?
-        p.-large Deixe uma mensagem que eu entro em contato
-        form.form-contato(action="https://formspree.io/andreechou@gmail.com", method="POST")
-          .columns
-            .column
-              .field
-                input(type="text" name="nome" placeholder="Qual seu nome ou apelido?")
-                label(name="nome") nome
-            .column
-              .field
-                input(type="text" name="contato" placeholder="Telefone ou email para entrar em contato?")
-                label(name="contato") contato
-          textarea(name="mensagem", placeholder="Precisa de um profissional ou de um site? Deixe uma mensagem!")
-          input.-mt-2(type="submit" value="Enviar")
-          input(type="hidden", name="_next", value="/obrigado.html")
-
-    script.
-      // Select all links with hashes
-      $('a[href*="#"]')
-        // Remove links that don't actually link to anything
-        .not('[href="#"]')
-        .not('[href="#0"]')
-        .click(function(event) {
-          // On-page links
-          if (
-            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-            && 
-            location.hostname == this.hostname
-          ) {
-            // Figure out element to scroll to
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            // Does a scroll target exist?
-            if (target.length) {
-              // Only prevent default if animation is actually gonna happen
-              event.preventDefault();
-              $('html, body').animate({
-                scrollTop: target.offset().top
-              }, 1000, function() {
-                // Callback after animation
-                // Must change focus!
-                var $target = $(target);
-                $target.focus();
-                if ($target.is(":focus")) { // Checking if the target was focused
-                  return false;
-                } else {
-                  $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                  $target.focus(); // Set focus again
-                };
-              });
-            }
-          }
-        });
-
+        h1 Hi! 
+          br
+          span.-light My name is 
+          | André Chou
+          span.-light . I’m 
+          | digital product designer 
+          span.-light passionate about 
+          | creating experiences for people.

@@ -721,13 +721,18 @@ p {
     font-size: 0.875rem; }
 
 a {
-  color: #000; }
+  color: #4A66E2;
+  text-decoration: none;
+  outline: 0; }
 
 a.-invert {
   text-decoration: none;
   font-weight: bold; }
   a.-invert:hover {
     text-decoration: underline; }
+
+a.-black {
+  color: #000 !important; }
 
 hr {
   border: none;
@@ -764,9 +769,16 @@ i {
   speak: none;
   font-weight: normal;
   font-size: 2rem;
-  font-family: "iconfont"; }
+  font-family: "iconfont";
+  line-height: 40px; }
   i.graphic-14s:before {
     content: "\EA01"; }
+  i.i-behance:before {
+    content: "\EA02"; }
+  i.i-linkedin:before {
+    content: "\EA03"; }
+  i.i-twitter:before {
+    content: "\EA04"; }
 
 .icon-typography {
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15), 4px 8px 8px rgba(0, 0, 0, 0.15), 8px 16px 16px rgba(0, 0, 0, 0.15), 16px 32px 32px rgba(0, 0, 0, 0.25), 32px 64px 64px rgba(0, 0, 0, 0.25); }
@@ -910,14 +922,17 @@ button, input[type="submit"] {
   .card-projeto h5, .card-projeto h6 {
     font-weight: lighter; }
 
-.content > figure {
+.content .img-logo {
+  max-width: 5rem; }
+
+.content figure {
   margin: 2.5rem 0 2rem; }
-  .content > figure > span {
+  .content figure > span {
     display: inline-block;
     width: 100%;
     text-align: center;
     font-size: 0.875rem; }
-  .content > figure.-no-border {
+  .content figure.-no-border {
     border: 1px #999 solid;
     padding: 1.5rem 1rem; }
 
@@ -948,6 +963,9 @@ button, input[type="submit"] {
     color: #FFF;
     resize: none; }
 
+footer {
+  padding: 2rem; }
+
 .form-contato {
   margin-top: 2rem; }
   .form-contato input:not([type="submit"]), .form-contato textarea {
@@ -967,7 +985,28 @@ button, input[type="submit"] {
     resize: none;
     height: 10rem; }
   .form-contato input[type="submit"] {
-    height: 3rem; }
+    height: 2.5rem; }
+
+header {
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+  header .icons-social {
+    text-align: right; }
+    header .icons-social > a {
+      margin-left: .5rem; }
+
+ul.menu-header {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 1rem; }
+  ul.menu-header > li {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 .5rem; }
+    ul.menu-header > li a {
+      color: #000; }
+    ul.menu-header > li a:hover {
+      color: #4A66E2; }
 
 .menu-inline {
   font-family: "harfang-pro", "Georgia", serif;

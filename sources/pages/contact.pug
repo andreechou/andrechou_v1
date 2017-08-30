@@ -1,0 +1,28 @@
+-var site_name = "André Chou"
+-var site_title = "UX Designer"
+-var page = "contact"
+
+doctype html
+html
+  head
+    include parts/head
+  body
+    include parts/header
+
+    section
+      .container.content
+        h3 Do you want to work together?
+        p.-large Leave me a message here and I'll answer soon
+        form.form-contato(action="https://formspree.io/andreechou@gmail.com", method="POST")
+          .columns
+            .column
+              .field
+                input(type="text" name="name" placeholder="What's you name?")
+                label(name="name") name
+            .column
+              .field
+                input(type="text" name="contact" placeholder="What's your email to reply?")
+                label(name="contact") email
+          textarea(name="mensagem", placeholder="Do you need a website or want to work together? Describe here!")
+          input.-mt-2(type="submit" value="Send")
+          input(type="hidden", name="_next", value="/thanks.html")
